@@ -53,7 +53,14 @@
     color: #61dafb;
     border-bottom: 0.25rem solid gold;
   }
-  
+  .productos {
+    padding: 2rem;
+  }
   .productos__products{
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
   }
