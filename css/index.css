@@ -53,3 +53,7 @@
     color: #61dafb;
     border-bottom: 0.25rem solid gold;
   }
+  
+  .productos__products{
+      display: flex;
+  }
