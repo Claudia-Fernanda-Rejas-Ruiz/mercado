@@ -58,6 +58,8 @@
   .bienvenida__imagen-container {
     position: relative;
     width: 100%;
+    height: auto;
+    margin: 0;
   }
   .bienvenida__imagen-container:hover .bienvenida__titulo-container {
     bottom: 0;
@@ -66,7 +68,7 @@
   .bienvenida__portada {
     display: block;
     width: 100%;
-    height: 52rem;
+    height: auto;
   }
   .bienvenida__titulo-container {
     position: absolute;
@@ -262,4 +264,13 @@
   
   .wave-separator__wave {
     width: 100%;
+  }
+
+  @media (min-width: 854px) {
+    .header{
+      height: auto;
+    }
+    .main{
+        width: auto;
+    }
   }
