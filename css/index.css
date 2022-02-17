@@ -104,11 +104,12 @@
     font-size: 50px;
     position: absolute;
     overflow: hidden;
-    top: 50%;
+    top: 55%;
     left: 50%;
     font-weight: bold;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-shadow: 0.3rem 0.3rem 0 rgba(0, 110, 255, 0.582);
   }
   .productos {
     text-align: center;
