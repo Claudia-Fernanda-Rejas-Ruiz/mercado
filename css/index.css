@@ -327,3 +327,15 @@
         width: auto;
     }
   }
+  .footer-nav__credits {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1rem;
+    padding-top: 0.5rem;
+    box-shadow: 0 -0.25rem 0.25rem -0.25rem var(--theme-color);
+  }
+  
+  .footer-nav__credits-author {
+    color: var(--highlight-color-1);
+    text-decoration: none;
+  }
