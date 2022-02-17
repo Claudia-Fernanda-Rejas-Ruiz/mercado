@@ -264,10 +264,12 @@
   .redes{
     text-align: center;
     padding: 4rem 0;
+    background-color: #61dafb;
   }
   .redes__tittle{
     margin: 2rem;
     font-size: 2rem;
+    text-shadow: 0.3rem 0.3rem 0 rgba(0, 110, 255, 0.582);
   }
   .footer {
     display: flex;
