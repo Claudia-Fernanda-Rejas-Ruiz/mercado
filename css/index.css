@@ -122,6 +122,8 @@
   .bienvenida__titulo {
     white-space: nowrap; 
     margin: auto;
+    display: flex;
+    max-width: 64rem;
     color: white;
     font-size: 4.2rem;
     position: absolute;
@@ -137,6 +139,8 @@
     white-space: nowrap;
     margin: auto; 
     color: white;
+    max-width: 64rem;
+    display: flex;
     font-size: 2.8rem;
     position: absolute;
     overflow: hidden;
@@ -251,7 +255,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 0 2rem;
-    max-width: 1024px;
+    max-width: 64rem;
     margin: auto;
   }
   
@@ -389,7 +393,7 @@
     }
     .footer-nav {
       padding: 0;
-      max-width: 1024px;
+      max-width: 64rem;
       margin: auto;
     }
   
@@ -403,7 +407,7 @@
     .productos-products-contenedor{
       align-items: center;
       padding: 0;
-      max-width: 1024px;
+      max-width: 64rem;
       margin: auto;
     }
     .productos__products-image-container{
