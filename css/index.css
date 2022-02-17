@@ -27,7 +27,17 @@
   .header-nav__link-logo-container {
     max-width: 5rem;
   }
+  .header-nav__menu-icon {
+    font-size: 2rem;
+    color: var(--inverse-theme-color);
+    cursor: pointer;
+    transition: all 0.5s;
+  }
   
+  .header-nav__menu-icon:hover {
+    font-size: 2.5rem;
+    filter: brightness(250%);
+  }
   .header-nav__logo {
     width: 100%;
     border-radius: 50%;
