@@ -88,14 +88,15 @@
   .bienvenida__titulo {
     white-space: nowrap; 
     color: white;
-    font-size: 120px;
+    font-size: 70px;
     position: absolute;
     overflow: hidden;
-    top: 40%;
+    top: 30%;
     left: 50%;
     font-weight: bold;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-shadow: 0.3rem 0.3rem 0 rgba(255, 174, 51, 0.63);
   }
   .bienvenida__intro{
     white-space: nowrap; 
