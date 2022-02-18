@@ -416,12 +416,7 @@
     .productos__products-image{
       flex: 1;
     }
-    .bienvenida__titulo{
-      font-size: 2.1rem;
-    }
-    .bienvenida__intro{
-      font-size: 1.4rem;
-    }
+    
    }
   img{
     max-width: 100%;
