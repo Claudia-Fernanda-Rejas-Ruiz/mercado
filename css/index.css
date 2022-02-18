@@ -371,7 +371,7 @@
     width: auto;
   }
 
-  @media (min-width: 854px) {
+  @media screen and (max-width: 900px) and (min-width: 600px){
     .header-nav__menu-icon {
       display: none;
     }
@@ -415,6 +415,12 @@
     }
     .productos__products-image{
       flex: 1;
+    }
+    .bienvenida__titulo{
+      font-size: 2.1rem;
+    }
+    .bienvenida__intro{
+      font-size: 1.4rem;
     }
    }
   img{
