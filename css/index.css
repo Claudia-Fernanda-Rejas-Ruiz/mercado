@@ -371,7 +371,7 @@
     width: auto;
   }
 
-  @media screen and (max-width: 900px) and (min-width: 600px){
+  @media (min-width: 854px){
     .header-nav__menu-icon {
       display: none;
     }
