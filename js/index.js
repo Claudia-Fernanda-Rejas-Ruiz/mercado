@@ -10,12 +10,15 @@ const documentReady = () => {
   finally { 
   alert("Ten un lindo día")}
   console.log("Hola usuari@, "+nombre);
+  const usuariosVisitantes=[]
+  usuariosVisitantes.push(nombre)
+  console.log(usuariosVisitantes)
   bienvenidaNombre.innerHTML += nombre;
 }
 document.addEventListener("DOMContentLoaded",documentReady);
 
 function currentTime() {
-  var date = new Date();
+  var date = new Date(); /*Se crea objeto Date*/
   var hour = date.getHours();
   var min = date.getMinutes();
   var sec = date.getSeconds();
@@ -36,3 +39,4 @@ function updateTime(k) {
 }
 
 currentTime(); /* Iniciando el proceso */
+
