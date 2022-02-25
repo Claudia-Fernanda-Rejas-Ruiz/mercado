@@ -3,12 +3,17 @@ const documentReady = () => {
   const bienvenidaNombre = document.getElementById("bienvenidaNombre");
   const nombre = prompt("Hola, ¿cuál es tu nombre?");
   try{ 
-    if(nombre==="") throw new Error("Ingrese su nombre, por favor") 
-    else alert(`Hola ${nombre}, qué bueno encontrarte aquí`)}
+      if (nombre==="") throw new Error("Ingrese su nombre, por favor")
+        else if (nombre=="null") throw new Error("Ingrese su nombre, por favor")
+      else alert(`Hola ${nombre}, qué bueno encontrarte aquí`)
+      }
   catch(e){ 
-    alert(e)}
+      alert(e)
+    }
   finally { 
-  alert("Ten un lindo día")}
+      alert("😳👉👈")}
+    
+  
   console.log("Hola usuari@, "+nombre);
   const usuariosVisitantes=[]
   usuariosVisitantes.push(nombre)
@@ -18,10 +23,10 @@ const documentReady = () => {
 document.addEventListener("DOMContentLoaded",documentReady);
 
 function currentTime() {
-  var date = new Date(); /*Se crea objeto Date*/
-  var hour = date.getHours();
-  var min = date.getMinutes();
-  var sec = date.getSeconds();
+  let date = new Date(); /*Se crea objeto Date*/
+  let hour = date.getHours();
+  let min = date.getMinutes();
+  let sec = date.getSeconds();
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);

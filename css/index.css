@@ -449,3 +449,9 @@
     font: bold 1.5em dotum, "lucida sans", arial; 
     text-align: center;
     float: right; margin: 1em 3em 1em 1em; }
+  
+  .lista_cantidades{
+    font-size: 1rem;
+    border-color: rgb(127, 240, 255);
+    background-color: rgba(127, 255, 212, 0.315);
+  }
