@@ -2,6 +2,13 @@
 const documentReady = () => {
   const bienvenidaNombre = document.getElementById("bienvenidaNombre");
   const nombre = prompt("Hola, ¿cuál es tu nombre?");
+  try{ 
+    if(nombre==="") throw new Error("Ingrese su nombre, por favor") 
+    else alert(`Hola ${nombre}, qué bueno encontrarte aquí`)}
+  catch(e){ 
+    alert(e)}
+  finally { 
+  alert("Ten un lindo día")}
   console.log("Hola usuari@, "+nombre);
   bienvenidaNombre.innerHTML += nombre;
 }
