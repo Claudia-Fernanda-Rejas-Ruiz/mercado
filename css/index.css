@@ -95,66 +95,40 @@
     background-attachment: fixed;
     background-position: center;
     position: relative;
+    display: inline-block;
+    text-align: center;
   }
-  .bienvenida__imagen-container:hover .bienvenida__titulo-container {
-    bottom: 0;
-    height: 100%;
-  }
+
   .bienvenida__portada {
-    display: block;
+    display: inline-block;
     width: 100%;
-    height: 45rem;
-    margin: auto;
-    box-shadow:  2rem 2rem 2rem rgba(226, 182, 101, 0.308);
-  }
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    }
  
-  .bienvenida__titulo-container {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background: rgb(251,186,63);
-    background: radial-gradient(circle, rgba(236, 182, 83, 0.192) 31%, rgba(8, 62, 87, 0.404) 100%);
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-    margin: auto;
-  }
   .bienvenida__titulo {
-    white-space: nowrap; 
-    margin: auto;
-    display: flex;
-    max-width: auto;
-    gap: auto;
     color: white;
     font-size: 8.2rem;
-    position: absolute;
-    overflow: hidden;
-    top: 35%;
-    left: 50%;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-shadow: 0.5rem 0.3rem 0 rgb(248, 180, 53);
-  }
-  .bienvenida__intro{
-    white-space: nowrap;
-    margin: auto; 
-    gap: auto;
-    padding-top: auto;
-    color: white;
-    max-width: 64rem;
-    display: flex;
-    font-size: 3rem;
-    position: absolute;
-    overflow: hidden;
     top: 50%;
     left: 50%;
-    font-weight: bolder;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-shadow: 0.3rem 0.3rem 0 rgb(105, 210, 241);
+    animation: bounce;
+    animation-duration: 2s;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .bienvenida__intro{
+    color: white;
+    font-size: 3rem;
+    animation: bounce; 
+    animation-duration: 2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
   }
   .productos {
     text-align: center;
@@ -430,7 +404,14 @@
   .wave-separator__wave {
     width: auto;
   }
-
+  @media only screen and (max-width: 767px){
+    .bienvenida__titulo{
+      max-width: 100%;
+    }
+    .bienvenida__intro{
+      max-width: 100%;
+    }
+  }
   @media (min-width: 600px){
     .header-nav__menu-icon {
       display: none;
@@ -484,6 +465,7 @@
     }
     
    }
+  
   img{
     max-width: 100%;
     height: auto;
