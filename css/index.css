@@ -45,10 +45,10 @@
     left: 0;
   }
   .header-nav__logo {
-    width: 100%;
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
+    opacity:0.7;
+    filter:alpha(opacity=40);
   }
   .img {
     max-width: 100%;
@@ -103,7 +103,7 @@
   .bienvenida__portada {
     display: block;
     width: 100%;
-    height: auto;
+    height: 45rem;
     margin: auto;
     box-shadow:  2rem 2rem 2rem rgba(226, 182, 101, 0.308);
   }
@@ -131,12 +131,12 @@
     font-size: 8.2rem;
     position: absolute;
     overflow: hidden;
-    top: 38%;
+    top: 35%;
     left: 50%;
     font-weight: bold;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-shadow: 0.3rem 0.3rem 0 rgb(251,186,63);
+    text-shadow: 0.5rem 0.3rem 0 rgb(248, 180, 53);
   }
   .bienvenida__intro{
     white-space: nowrap;
@@ -146,15 +146,15 @@
     color: white;
     max-width: 64rem;
     display: flex;
-    font-size: 2.8rem;
+    font-size: 3rem;
     position: absolute;
     overflow: hidden;
     top: 50%;
     left: 50%;
-    font-weight: bold;
+    font-weight: bolder;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 95, 0.541);
+    text-shadow: 0.3rem 0.3rem 0 rgb(105, 210, 241);
   }
   .productos {
     text-align: center;
@@ -219,6 +219,7 @@
     object-position: center center;
   }
 
+
   .productos__products-image-container{
     display: flex;
     margin: auto;
@@ -232,9 +233,11 @@
     transition: all 0.5s;
     justify-content: center;
   }
+  
   .productos__products-image-container:hover {
         box-shadow: 0 0 0 0.20rem rgb(255, 196, 0);
       }
+      
 
   .productos__products-title{
     display: flex;
@@ -244,11 +247,61 @@
     margin: 0 2rem;
     color: #282c34;
     font-size: 1.4rem;
+    text-shadow: 0.2rem 0.2rem 0 rgba(63, 73, 77, 0.253);
   }
   .productos__title{
     text-transform:uppercase;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: 0.3rem 0.2rem 0 rgb(235, 192, 75);
+    font-weight: bold;
+  }
+  .ofertas{
+    display: grid;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    margin: 1rem;
+    align-content: center;
+    grid-auto-columns:repeat(3, 1fr);
+  }
+  .oferta{
+    background-color: rgba(253, 220, 36, 0.39);
+    border-radius: 20px 20px;
+    box-shadow: 5px 10px orange;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    border-radius: 5%;
+    grid-auto-rows: minmax(1rem, auto);
+    margin: 4rem 3rem;
+  }
+  .ofertas-imagen{
+    width: 25rem;
+    height: 12rem;
+    margin: 0;
+    border-radius: 5%;
+    justify-content: center;
+    align-content: center;
+    object-position: center center;
+    transition: all 0.5s;
+  }
+  .oferta-imagen-container:hover {
+    box-shadow: 0 0 0 0.6rem rgb(255, 196, 0);
+    border-radius: 5%;
+  }
+  .oferta-titulo{
+    margin: 1rem 3rem;
+    justify-content: center;
+    align-content: center;
+  }
+  .oferta-texto{
+    margin: 1rem 3rem;
+    justify-content: center;
+    align-content: center;
   }
   .contacto {
     text-align: center;
@@ -267,6 +320,7 @@
   .contacto__tittle {
     margin: 0;
     font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem 0 rgba(53, 52, 49, 0.459);
   }
   
   .contacto__form {
@@ -320,7 +374,7 @@
   .redes{
     text-align: center;
     padding: 4rem 0;
-    background-color: #61dafb;
+    background: rgba(97,218,251,1)
   }
   .redes__tittle{
     margin: 2rem;
@@ -331,7 +385,8 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    background-color: #61dafb;
+    background: rgba(97,218,251,1)
+
   }
   .footer-nav {
     display: flex;
