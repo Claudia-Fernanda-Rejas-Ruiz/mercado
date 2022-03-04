@@ -88,7 +88,6 @@
     border-bottom: 0.25rem solid gold;
   }
   .bienvenida__imagen-container {
-    top: 0;
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,23 +100,29 @@
   }
 
   .bienvenida__portada {
-    display: inline-block;
-    width: 100%;
-    position: relative;
     text-align: center;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     align-items: center;
     align-content: center;
-
+    margin: auto;
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    position: relative;
     }
- 
+  .texto_bienvenida-intro{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+  }
   .bienvenida__titulo {
     color: rgb(235, 229, 229);
     font-size: 9.2rem;
-    top: 25%;
-    left: 30%;
     animation: bounce;
     animation-duration: 2s;
     transform: translate(-50%,-50%);
@@ -125,6 +130,9 @@
     text-shadow: 0.4rem 0.2rem 0 rgba(255, 156, 57, 0.952);
     align-items: center;
     align-content: center;
+    display: inline-block;
+    overflow: hidden;
+    top: 35%;
   }
   .bienvenida__intro{
     color: white;
@@ -132,13 +140,14 @@
     font-size: 3rem;
     animation: bounce; 
     animation-duration: 2s;
-    top: 100%;
-    left: 40%;
     transform: translate(-50%,-50%);
     position: absolute;
     align-items: center;
     align-content: center;
     text-shadow: 0.2rem 0.2rem 0 rgb(63, 73, 77);
+    display: inline-block;
+    overflow: hidden;
+    top: 55%;
   }
   .productos {
     text-align: center;
@@ -241,27 +250,28 @@
     font-weight: bold;
   }
   .ofertas{
-    display: grid;
-    display: flex;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: auto;
     justify-content: center;
-    margin: 1rem;
     align-content: center;
-    grid-auto-columns:repeat(3, 1fr);
+    flex-direction: row;
+    margin: 1rem 1rem;
+    object-position: center center;
+    align-self: center;
   }
   .oferta{
     background-color: rgba(253, 220, 36, 0.39);
     border-radius: 20px 20px;
     box-shadow: 5px 10px orange;
-    display: flex;
-    padding: 1rem;
     justify-content: center;
     align-content: center;
-    display: grid;
     border-radius: 5%;
-    grid-auto-rows: minmax(1rem, auto);
-    margin: 4rem 3rem;
+    flex-direction: column;
+    padding: 1rem;
+    object-position: center center;
+    align-self: center;
+    margin: 1rem;
   }
   .ofertas-imagen{
     width: 25rem;
@@ -273,19 +283,21 @@
     object-position: center center;
     transition: all 0.5s;
   }
-  .oferta-imagen-container:hover {
+  .oferta-imagen:hover {
     box-shadow: 0 0 0 0.6rem rgb(255, 196, 0);
     border-radius: 5%;
   }
   .oferta-titulo{
-    margin: 1rem 3rem;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
+    object-position: center center;
   }
   .oferta-texto{
-    margin: 1rem 3rem;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
+    object-position: center center;
   }
   .contacto {
     text-align: center;
