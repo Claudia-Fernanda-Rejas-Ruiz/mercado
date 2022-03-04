@@ -97,6 +97,7 @@
     position: relative;
     display: inline-block;
     text-align: center;
+    flex-direction: column;
   }
 
   .bienvenida__portada {
@@ -131,13 +132,13 @@
     font-size: 3rem;
     animation: bounce; 
     animation-duration: 2s;
-    top: 40%;
-    left: 48%;
+    top: 100%;
+    left: 40%;
     transform: translate(-50%,-50%);
     position: absolute;
     align-items: center;
     align-content: center;
-    text-shadow: 0.2rem 0.2rem 0 rgba(63, 73, 77, 0.253);
+    text-shadow: 0.2rem 0.2rem 0 rgb(63, 73, 77);
   }
   .productos {
     text-align: center;
