@@ -245,9 +245,12 @@
   .productos__title{
     text-transform:uppercase;
     margin: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: 0.3rem 0.2rem 0 rgb(235, 192, 75);
     font-weight: bold;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .ofertas{
     display: inline-flex;
@@ -434,6 +437,16 @@
     .bienvenida__intro{
       max-width: 100%;
       font-size: 2.2rem;
+    }
+    .bienvenida__portada{
+      width: 100%;
+      height: 30rem;
+    }
+    .productos__title{
+      overflow: hidden;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
     }
   }
   @media (min-width: 600px){
