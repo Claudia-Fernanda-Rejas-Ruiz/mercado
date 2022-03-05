@@ -302,6 +302,9 @@
     overflow: hidden;
     object-position: center center;
   }
+  .texto-ofertas{
+    padding: 0 1.5rem;
+  }
   .contacto {
     text-align: center;
     padding: 2rem 2rem;
