@@ -135,16 +135,17 @@
     top: 35%;
   }
   .bienvenida__intro{
-    color: white;
+    color: rgb(235, 229, 229);
     top: 0;
     font-size: 3rem;
+    font-weight: bold;
     animation: bounce; 
     animation-duration: 2s;
     transform: translate(-50%,-50%);
     position: absolute;
     align-items: center;
     align-content: center;
-    text-shadow: 0.2rem 0.2rem 0 rgb(63, 73, 77);
+    text-shadow: 0.4rem 0.2rem 0 rgba(255, 156, 57, 0.952);
     display: inline-block;
     overflow: hidden;
     top: 60%;
@@ -435,7 +436,7 @@
   @media only screen and (max-width: 767px){
     .bienvenida__titulo{
       max-width: 100%;
-      top: 25%;
+      top: 60%;
       font-size: 4.2rem;
     }
     .bienvenida__intro{
